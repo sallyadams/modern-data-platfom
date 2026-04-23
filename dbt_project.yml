@@ -1,0 +1,14 @@
+name: modern_data_platform
+version: "1.0"
+config-version: 2
+
+profile: modern_data_platform
+
+model-paths: ["models"]
+
+models:
+  modern_data_platform:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
